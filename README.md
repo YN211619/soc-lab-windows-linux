@@ -40,6 +40,7 @@ Each scenario will include its objective, prerequisites, procedure, observed res
 
 ## 5. Repository structure
 
+```text
 soc-lab-windows-linux/
 ├── README.md
 ├── docs/
@@ -60,6 +61,7 @@ soc-lab-windows-linux/
 └── reports/
     ├── incident-report-template.md
     └── final-report.md
+```
 
 The repository will be populated progressively as each component is installed and tested.
 
