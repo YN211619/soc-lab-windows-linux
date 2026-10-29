@@ -76,7 +76,22 @@ lsb_release -a
 **Observed results:**
 
 ```text
-[Relevant command output here]
+Static hostname: wazuh-server
+[...]
+Virtualization: vmware
+Operating System: Ubuntu 24.04.5 LTS
+Kernel: Linux 6.8.0-147-generic
+Architecture: arm64
+[...]
+
+aarch64
+
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description: Ubuntu 24.04.5 LTS
+Release: 24.04
+Codename: noble
+
 ```
 
 ## 5. Network Configuration
@@ -86,11 +101,11 @@ lsb_release -a
 | Property | Value |
 |---|---|
 | Network mode | NAT |
-| Network interface | [Interface name] |
-| Private lab IP address | [Private IP address, if applicable] |
-| Default gateway | [Gateway address] |
-| DNS configuration | [Observed configuration] |
-| Internet access | [Working / Not working] |
+| Network interface | enp2s0 |
+| Private lab IP address | 172.16.217.129 |
+| Default gateway | 172.16.217.2 |
+| DNS configuration | 172.16.217.2 |
+| Internet access | Working |
 
 
 ### 5.2 Network Validation
@@ -106,15 +121,15 @@ getent hosts archive.ubuntu.com
 
 | Test | Expected result | Actual result |
 |---|---|---|
-| Network interface | Interface is present | [Result] |
-| IP configuration | Valid address assigned | [Result] |
-| Default route | Route is present | [Result] |
-| IP connectivity | Requests succeed, if permitted | [Result] |
+| Network interface | Interface is present | 172.16.217.129 |
+| IP configuration | Valid address assigned | 172.16.217.129 |
+| Default route | Route is present | 172.16.217.2 |
+| IP connectivity | Requests succeed | 0% packet loss |
 | DNS resolution | Hostname resolves to an IP address | [Result] |
 
 **Observations:**
 
-[any connectivity issues, errors, or troubleshooting steps.]
+
 
 ## 6. Resource Validation
 
@@ -128,13 +143,12 @@ nproc
 
 | Property | Observed value |
 |---|---|
-| Total memory visible to the VM | [Value] |
-| Available memory | [Value] |
-| Root filesystem size | [Value] |
-| Root filesystem usage | [Value] |
-| Number of available CPUs | [Value] |
+| Total memory visible to the VM | 5.8Gi |
+| Available memory | [5.4Gi |
+| Root filesystem size | 9.8G |
+| Root filesystem usage | 334Mi |
+| Number of available CPUs | 2 |
 
-These results provide a baseline for evaluating resource consumption after Wazuh is installed.
 
 ## 7. System Updates and Remote Administration
 
@@ -148,33 +162,33 @@ systemctl status ssh
 
 | Check | Result |
 |---|---|
-| Package repository access | [Success / Failure] |
-| System updates | [Completed / Pending] |
-| SSH service installed | [Yes / No] |
-| SSH service status | [Active / Inactive / Not installed] |
-| SSH connectivity tested | [Yes / No / Not applicable] |
+| Package repository access | Success |
+| System updates | Completed |
+| SSH service installed | Yes |
+| SSH service status | Active |
+| SSH connectivity tested | Yes |
 
 **Notes:**
 
-[any relevant warnings, errors, or corrective actions.]
+
 
 ## 8. Initial Validation Summary
 
 | Validation | Status | Evidence or notes |
 |---|---|---|
-| VMware Fusion installed | [Pass / Fail / Pending] | [Notes] |
-| Ubuntu installation completed | [Pass / Fail / Pending] | [Notes] |
-| ARM64 architecture confirmed | [Pass / Fail / Pending] | [Notes] |
-| Hostname configured | [Pass / Fail / Pending] | [Notes] |
-| Network configuration checked | [Pass / Fail / Pending] | [Notes] |
-| Internet connectivity tested | [Pass / Fail / Pending] | [Notes] |
-| DNS resolution tested | [Pass / Fail / Pending] | [Notes] |
-| System updates applied | [Pass / Fail / Pending] | [Notes] |
-| SSH service checked | [Pass / Fail / Pending] | [Notes] |
+| VMware Fusion installed | Pass | [Notes] |
+| Ubuntu installation completed | Pass | [Notes] |
+| ARM64 architecture confirmed | Pass | [Notes] |
+| Hostname configured | Pass | [Notes] |
+| Network configuration checked | Pass | [Notes] |
+| Internet connectivity tested | Pass | [Notes] |
+| DNS resolution tested | Pass | [Notes] |
+| System updates applied | Pass | [Notes] |
+| SSH service checked | Pass | [Notes] |
 
 ### Overall Status
 
-[whether the VM is ready for the next phase and identify any unresolved issues.]
+
 
 ## 9. Known Limitations
 
