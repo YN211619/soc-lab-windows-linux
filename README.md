@@ -42,26 +42,41 @@ Each scenario will include its objective, prerequisites, procedure, observed res
 
 ```text
 soc-lab-windows-linux/
+│
 ├── README.md
+│
 ├── docs/
 │   ├── project-scope.md
+│   ├── environment.md
 │   ├── architecture.md
 │   ├── network-design.md
 │   └── limitations.md
+│
 ├── diagrams/
+│   └── architecture.mmd
+│
 ├── setup/
 │   ├── wazuh/
+│   │   ├── installation.md
+│   │   └── troubleshooting.md
+│   │
 │   ├── linux/
+│   │   └── agent-installation.md
+│   │
 │   └── windows/
+│       └── agent-installation.md
+│
 ├── scenarios/
 │   ├── 01-authentication-monitoring/
 │   ├── 02-file-integrity/
 │   ├── 03-windows-events/
 │   └── 04-security-assessment/
+│
 └── reports/
     ├── incident-report-template.md
     └── final-report.md
 ```
+
 
 The repository will be populated progressively as each component is installed and tested.
 
