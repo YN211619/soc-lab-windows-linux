@@ -28,11 +28,11 @@ The purpose is to establish a documented and reproducible environment before dep
 
 | Property | Value |
 |---|---|
-| Software | VMware Fusion Pro |
-| Version | [Installed version] |
+| Software | UTM |
+| Version | 4.7.5 |
 | Host architecture | Apple Silicon |
 | VM networking mode | NAT / Shared with my Mac |
-| Installation source | [https://support.broadcom.com](https://support.broadcom.com) |
+| Installation source | [https://getutm.app]|
 
 ## 4. Virtual Machine: wazuh-server
 
@@ -43,9 +43,9 @@ The purpose is to establish a documented and reproducible environment before dep
 | VM name | `wazuh-server` | 
 | Operating system | Ubuntu Server 24.04 LTS | 
 | Operating system architecture | ARM64 | 
-| Virtual CPUs | 2 | 
-| Memory | 6 GB | 
-| Virtual disk | 20 GB | 
+| Virtual CPUs | 4 | 
+| Memory | 8 GB | 
+| Virtual disk | 60 GB | 
 | Disk allocation | Dynamic | 
 | Network mode | NAT | 
 | Hostname | `wazuh-server` | 
@@ -78,7 +78,7 @@ lsb_release -a
 ```text
 Static hostname: wazuh-server
 [...]
-Virtualization: vmware
+Virtualization: qemu
 Operating System: Ubuntu 24.04.5 LTS
 Kernel: Linux 6.8.0-147-generic
 Architecture: arm64
@@ -101,10 +101,10 @@ Codename: noble
 | Property | Value |
 |---|---|
 | Network mode | NAT |
-| Network interface | enp2s0 |
-| Private lab IP address | 172.16.217.129 |
-| Default gateway | 172.16.217.2 |
-| DNS configuration | 172.16.217.2 |
+| Network interface | enp0s1 |
+| Private lab IP address | 192.168.64.6 |
+| Default gateway | 192.168.64.1 |
+| DNS configuration | 192.168.64.1 |
 | Internet access | Working |
 
 
@@ -121,11 +121,11 @@ getent hosts archive.ubuntu.com
 
 | Test | Expected result | Actual result |
 |---|---|---|
-| Network interface | Interface is present | 172.16.217.129 |
-| IP configuration | Valid address assigned | 172.16.217.129 |
-| Default route | Route is present | 172.16.217.2 |
+| Network interface | Interface is present | 192.168.64.6 |
+| IP configuration | Valid address assigned | 192.168.64.6 |
+| Default route | Route is present | 192.168.64.1 |
 | IP connectivity | Requests succeed | 0% packet loss |
-| DNS resolution | Hostname resolves to an IP address | [Result] |
+| DNS resolution | Hostname resolves to an IP address | 192.168.64.1 |
 
 **Observations:**
 
@@ -143,11 +143,11 @@ nproc
 
 | Property | Observed value |
 |---|---|
-| Total memory visible to the VM | 5.8Gi |
-| Available memory | [5.4Gi |
-| Root filesystem size | 9.8G |
-| Root filesystem usage | 334Mi |
-| Number of available CPUs | 2 |
+| Total memory visible to the VM | 7.7Gi |
+| Available memory | [7.4Gi |
+| Root filesystem size | 28G |
+| Root filesystem usage | 327Mi |
+| Number of available CPUs | 4 |
 
 
 ## 7. System Updates and Remote Administration
@@ -176,7 +176,7 @@ systemctl status ssh
 
 | Validation | Status | Evidence or notes |
 |---|---|---|
-| VMware Fusion installed | Pass | [Notes] |
+| UTM installed | Pass | [Notes] |
 | Ubuntu installation completed | Pass | [Notes] |
 | ARM64 architecture confirmed | Pass | [Notes] |
 | Hostname configured | Pass | [Notes] |
@@ -219,5 +219,5 @@ Once the environment has been validated:
 - [Ubuntu ARM64 installation images](https://cdimage.ubuntu.com/ubuntu/releases/noble/release/)
 - [Wazuh documentation](https://documentation.wazuh.com/current/index.html)
 - [Wazuh quickstart guide](https://documentation.wazuh.com/current/quickstart.html)
-- [VMware Fusion official support portal](https://support.broadcom.com/)
+- [UTM official Documentation](https://docs.getutm.app)
 
