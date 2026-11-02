@@ -24,7 +24,7 @@ The lab focuses on collecting and analysing security events from Linux and Windo
 | Ubuntu Server ARM64 | Wazuh central components |
 | Debian ARM64 | Linux endpoint |
 | Windows 11 ARM | Windows endpoint, subject to agent compatibility validation |
-| VMware Fusion Pro | Local virtualisation platform |
+| UTM | Local virtualisation platform |
 | Git and GitHub | Version control and public documentation |
 
 The lab will run on an Apple Silicon MacBook Air M4 with 16 GB of unified memory.
@@ -83,7 +83,7 @@ Screenshots and logs will be used as supporting evidence, with sensitive informa
 
 - [Wazuh documentation](https://documentation.wazuh.com/current/index.html)
 - [Wazuh quickstart](https://documentation.wazuh.com/current/quickstart.html)
-- [VMware Fusion — official download and licensing information](https://knowledge.broadcom.com/external/article/368667/download-and-license-free-vmware-desktop.html)
+- [UTM - official download and licensing information](https://getutm.app))
 
 ## 9. Current limitations and open questions
 
