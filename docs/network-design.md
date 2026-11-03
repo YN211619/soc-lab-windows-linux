@@ -10,18 +10,19 @@ The addresses of the Windows and Ubuntu endpoints are not yet known and have not
 
 ## Logical diagram
 ```text
-MacBook Air M4 (Host)
-        |
-       UTM
-        |
- Shared virtual network
-        |
-        +------------------- -+
-        |          |         |
- Ubuntu Server  Windows 11  Ubuntu Linux
- Wazuh Server   Endpoint    Endpoint
- 192.168.64.6   DHCP to      DHCP to
-                be obtained     be obtained
+
+                                                         ____  Ubuntu Server
+                                                        |        Wazuh Server 
+                                                        |        192.168.64.6 
+                                                        |       
+MacBook Air M4 (Host) -- UTM -- Shared virtual network -|----  Windows 11
+                                                        |        Endpoint 
+                                                        |        DHCP to be obtained
+                                                        |
+                                                         ----  Ubuntu Linux
+                                                                 Endpoint
+                                                                 DHCP to be obtained
+
 ```
 
 ## Required data flows
