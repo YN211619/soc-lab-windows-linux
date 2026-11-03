@@ -203,7 +203,15 @@ Additional limitations identified during setup:
 - [Limitation 1]
 - [Limitation 2]
 
-## 10. Next Steps
+## 10. virtual machines
+
+| Rôle | Système | vCPU | RAM | Disque configuré |
+|---|---|---:|---:|---:|
+| Serveur SOC | Ubuntu Server 24.04 LTS ARM64 | 4 | 8 Go | 60 Go |
+| Endpoint Windows | Windows 11 Pro | 2 | 2 Go | 29,7 Go |
+| Endpoint Linux | Ubuntu Linux | 2 | 2 Go | 23,76 Go |
+
+## 11. Next Steps
 
 Once the environment has been validated:
 
@@ -213,7 +221,7 @@ Once the environment has been validated:
 4. Document the installation and operational checks.
 5. Prepare the environment for the first monitored endpoint.
 
-## 11. References
+## 12. References
 
 - [Ubuntu Server documentation](https://documentation.ubuntu.com/server/)
 - [Ubuntu ARM64 installation images](https://cdimage.ubuntu.com/ubuntu/releases/noble/release/)
