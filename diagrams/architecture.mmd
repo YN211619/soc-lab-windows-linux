@@ -2,17 +2,17 @@ flowchart TB
 HOST["MacBook Air M4
 macOS — Host"] --> UTM["UTM
 Virtualisation ARM64"]
-UTM --> NET["Réseau virtuel UTM
+UTM --> NET["Virtual network UTM
 Shared Network"]
 NET --> WAZUH["Ubuntu Server 24.04 ARM64
 wazuh-server
 192.168.64.6"]
 NET --> WIN["Windows 11 Pro
-Endpoint — agent à installer"]
+Endpoint"]
 NET --> LINUX["Ubuntu Linux
-Endpoint — agent à installer"]
+Endpoint"]
 
-subgraph SERVER["Serveur Wazuh — VM unique"]
+subgraph SERVER["Serveur Wazuh"]
 MANAGER["Wazuh Manager"]
 FILEBEAT["Filebeat"]
 INDEXER["Wazuh Indexer"]
