@@ -211,7 +211,22 @@ Additional limitations identified during setup:
 | Endpoint Windows | Windows 11 Pro | 2 | 2 Go | 29,7 Go |
 | Endpoint Linux | Ubuntu Linux | 2 | 2 Go | 23,76 Go |
 
-## 11. Next Steps
+
+## 11. Windows endpoint
+
+- OS: Windows 11 Pro
+- Version: 10.0.26200
+- Architecture: ARM64
+- Wazuh agent: 4.14.9
+- Agent name: windows11-arm64
+- Agent ID: 001
+- IPv4 address: 192.168.64.5
+- Wazuh service: Running
+- Agent connection status: Active
+- Ports tested: 1514/TCP and 1515/TCP
+- Connectivity: Successful
+
+## 12. Next Steps
 
 Once the environment has been validated:
 
@@ -221,7 +236,7 @@ Once the environment has been validated:
 4. Document the installation and operational checks.
 5. Prepare the environment for the first monitored endpoint.
 
-## 12. References
+## 13. References
 
 - [Ubuntu Server documentation](https://documentation.ubuntu.com/server/)
 - [Ubuntu ARM64 installation images](https://cdimage.ubuntu.com/ubuntu/releases/noble/release/)
