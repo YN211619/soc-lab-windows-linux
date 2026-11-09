@@ -214,29 +214,60 @@ Additional limitations identified during setup:
 
 ## 11. Windows endpoint
 
-- OS: Windows 11 Pro
-- Version: 10.0.26200
-- Architecture: ARM64
-- Wazuh agent: 4.14.9
-- Agent name: windows11-arm64
-- Agent ID: 001
-- IPv4 address: 192.168.64.5
-- Wazuh service: Running
-- Agent connection status: Active
-- Ports tested: 1514/TCP and 1515/TCP
-- Connectivity: Successful
+| Item | Value |
+|---|---|
+| VM name | Windows endpoint |
+| Operating system | Windows 11 Pro |
+| Version detected | `10.0.26200` |
+| Architecture | ARM64 |
+| IPv4 address detected in Windows | `192.168.64.5` |
+| Allocated memory | 4 GB |
+| Virtual CPUs | 2 |
+| Virtual disk | Approximately 29.7 GB |
+| Wazuh Agent | `4.14.9` |
+| Wazuh agent name | `windows11-arm64` |
+| Wazuh ID | `001` |
+| Agent status | `Active` |
 
-## 12. Next Steps
+## 12. Linux Endpoint
 
-Once the environment has been validated:
+| Item | Value |
+|---|---|
+| VM name | Ubuntu Linux endpoint |
+| Operating system | Ubuntu 24.04.4 LTS |
+| Kernel architecture | `aarch64` |
+| Package architecture | `arm64` |
+| IPv4 address detected on the VM | `192.168.64.4` |
+| Allocated memory | 2 GB |
+| Virtual CPUs | 2 |
+| Virtual disk | Approximately 23.76 GB |
+| Wazuh Agent | `4.14.9-1` |
+| Wazuh agent name | `ubuntu-linux-arm64` |
+| Wazuh ID | `002` |
+| Service status | `active` |
+| Manager-side status | `Active` |
 
-1. Install the Wazuh central components.
-2. Verify the status of the Wazuh services.
-3. Access the Wazuh web dashboard.
-4. Document the installation and operational checks.
-5. Prepare the environment for the first monitored endpoint.
+## 13. Laboratory network
 
-## 13. References
+| Source | Destination | Port | Test result |
+|---|---|---:|---|
+| Windows `192.168.64.5` | Wazuh `192.168.64.6` | TCP/1514 | Accessible |
+| Windows `192.168.64.5` | Wazuh `192.168.64.6` | TCP/1515 | Accessible |
+| Ubuntu `192.168.64.4` | Wazuh `192.168.64.6` | TCP/1514 | Accessible |
+| Ubuntu `192.168.64.4` | Wazuh `192.168.64.6` | TCP/1515 | Accessible |
+
+## 14. Related documentation
+
+- `setup/wazuh/installation.md`
+- `setup/wazuh/troubleshooting.md`
+- `setup/windows/agent-installation.md`
+- `setup/linux/agent-installation.md`
+- `docs/project-scope.md`
+- `docs/architecture.md`
+- `docs/network-design.md`
+- `docs/limitations.md`
+
+## 15. References
 
 - [Ubuntu Server documentation](https://documentation.ubuntu.com/server/)
 - [Ubuntu ARM64 installation images](https://cdimage.ubuntu.com/ubuntu/releases/noble/release/)
