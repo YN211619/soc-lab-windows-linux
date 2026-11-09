@@ -19,4 +19,4 @@ The UTM network is virtual. IP addresses may change if DHCP is used. Connectivit
 Two endpoints are initially planned: Windows 11 Pro and Ubuntu. The host Mac is not monitored. Detections depend on the logs collected, active rules and agent settings. As all core components are on a single VM, there is no high availability.
 
 ## Confidentiality
-Use non-sensitive test data. Redact any unnecessary private information from captures and reports.
+Use non-sensitive test data. Redact any unnecessary private information from captures and reports. Never publish an agent key, enrolment password, secret or configuration file containing credentials.
