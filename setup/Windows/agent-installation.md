@@ -210,6 +210,6 @@ This confirms, for this test, the following sequence of events: generation of th
 
 ## 12. Références
 
-- [Wazuh — Déploiement des agents Wazuh sur les terminaux Windows](https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh-agent-package-windows.html)
-- [Wazuh — Liste des paquets](https://documentation.wazuh.com/current/installation-guide/packages-list.html)
-- [Wazuh — Canal d'événements Windows](https://documentation.wazuh.com/current/user-manual/capabilities/log-data-collection/configuration.html)
+- [Wazuh — Deploying Wazuh agents on Windows endpoints](https://documentation.wazuh.com/current/installation-guide/wazuh-agent/wazuh-agent-package-windows.html)
+- [Wazuh — Packages list](https://documentation.wazuh.com/current/installation-guide/packages-list.html)
+- [Wazuh — Windows event channel](https://documentation.wazuh.com/current/user-manual/capabilities/log-data-collection/configuration.html)
