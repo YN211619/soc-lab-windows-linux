@@ -98,6 +98,9 @@ sudo tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt
 ```
 
 ## Official sources
+
+- [Wazuh documentation](https://documentation.wazuh.com/current/index.html)
+- [Wazuh quickstart guide](https://documentation.wazuh.com/current/quickstart.html)
 - Indexer: https://documentation.wazuh.com/current/installation-guide/wazuh-indexer/installation-assistant.html
 - Server: https://documentation.wazuh.com/current/installation-guide/wazuh-server/installation-assistant.html
 - Dashboard: https://documentation.wazuh.com/current/installation-guide/wazuh-dashboard/installation-assistant.html
