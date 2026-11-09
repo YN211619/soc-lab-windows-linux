@@ -37,6 +37,6 @@ Check the actual configuration before creating network rules.
 - [x] Indexer installed.
 - [x] Manager and Filebeat installed.
 - [x] Dashboard installed and accessible.
-- [ ] Windows agent connected.
-- [ ] Ubuntu agent connected.
+- [x] Windows agent connected.
+- [x] Ubuntu agent connected.
 - [ ] Scenarios implemented and documented.
