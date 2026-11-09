@@ -271,7 +271,5 @@ Additional limitations identified during setup:
 
 - [Ubuntu Server documentation](https://documentation.ubuntu.com/server/)
 - [Ubuntu ARM64 installation images](https://cdimage.ubuntu.com/ubuntu/releases/noble/release/)
-- [Wazuh documentation](https://documentation.wazuh.com/current/index.html)
-- [Wazuh quickstart guide](https://documentation.wazuh.com/current/quickstart.html)
 - [UTM official Documentation](https://docs.getutm.app)
 
