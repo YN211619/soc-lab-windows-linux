@@ -55,3 +55,4 @@ The IP address observed may change if DHCP is used. Check it before installing t
 
 ## Security
 Restrict the Dashboard to the laboratory network, do not expose the Indexer.
+Never publish an agent key, enrolment password, secret or configuration file containing credentials.
